@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+:root {
+    --body-width: 1000px;
+}
+
+
+/* css header */
+
+.headers {
+    max-width: var(--body-width);
+    margin: 30px auto;
+    color: #fff;
+}
+
+.headers-menu ul {
+    background: rgb(48, 42, 42);
+}
+
+.headers-menu ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.headers li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headers li:hover {
+    background: rgb(53, 231, 133);
+}
+
+.bootstrap {
+    max-width: 800px;
+    margin: 30px auto;
+    border-left: 1px solid #000;
+    text-align: center;
+}
+
+.bootstrap-top {
+    background: rgb(12 10 52 / 76%);
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.bootstrap-top span {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.bootstrap-top ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.bootstrap-top ul li {
+    padding: 7px 15px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.bootstrap-top ul li:hover {
+    background: rgba(20, 19, 19, 0.747);
+}
+
+.bootstrap-form {
+    margin-top: 30px;
+}
+
+.bootstrap-form form input {
+    width: 60%;
+}
+
+.boostrap-body {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.boostrap-body_title b {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.boostrap-body_title span {
+    position: relative;
+}
+
+.boostrap-body_title b::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: darkblue;
+    ;
+}
+
+.boostrap-body_title i {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: darkblue;
+    background: #fff;
+    padding: 0 2px;
+}
+
+
+/* css form dang ky */
+
+.formdangkys {
+    max-width: var(--body-width);
+    margin: 30px auto;
+    padding: 30px 20px;
+    background: #f7f7d8;
+}
+
+.formdangky>div {
+    margin: 8px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 5px;
+}
+
+.col-7 {
+    width: 58.33333%;
+    padding-right: 5px;
+}
+
+.col-5 {
+    width: 41.66666%;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.formdangkys label {
+    text-transform: capitalize;
+}
+
+input {
+    padding: 8px 10px;
+    border: #ccc solid 1px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+input:focus,
+input:active,
+select:focus,
+select:active {
+    outline: none;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+}
+
+#ip_address1,
+#ip_address2 {
+    width: 100%;
+}
+
+#ip_state {
+    width: 100%;
+}
+
+#ip_zip {
+    width: 100%;
+}
+
+#ip_checkmeout {
+    margin-top: 0;
+}
+
+.checkmeout {
+    padding: 0 5px;
+}
+
+.checkmeout label {
+    margin-left: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: #ccc solid 1px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.btn-sign_in {
+    padding: 8px 5px;
+}
+
+.btn-sign_in button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    background: rgb(70, 129, 207);
+    color: #ffff;
+    cursor: pointer;
+}
+
+.btn-sign_in button:hover {
+    color: rgb(70, 129, 207);
+    background: #ffff;
+}
